@@ -1,0 +1,213 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    word-wrap: break-word; /*quebrar palavras caso ultrapsse o tamanho do container*/
+    overflow:  break-word; /*quebrar palavras caso ultrapsse o tamanho do container*/
+}
+
+
+
+header .container {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+.menuheader {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoheader {
+    display: flex;
+    align-items: center;
+    font-family: 'Chela One', cursive;
+    font-size: 50PX;
+    color: #fff;
+}
+.mh_1 {
+    line-height: 56px;
+    padding-inline-start: 25px;
+    padding-inline-end: 25px;
+    justify-content: center;
+    background-color: antiquewhite;
+    border:2px solid yellow;
+}
+
+#banner {
+    
+
+}
+
+.banner_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner_img img {
+    max-width: 100%;
+}
+
+#history {
+
+}
+
+#history .container{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#img_perfil{
+    display: flex;
+    width: 250px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+.h_tittle {
+    color: red;
+    font-size: 80px;
+    font-family: 'Chela One', cursive;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.h_text {
+    width: 800px;
+}
+#history p {
+    line-height: 1.8;
+    color: #fff;
+    font-size: 20px;
+}
+
+.remember {
+    border-top: 2px solid aquamarine;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#timeline {
+    color: #fff;
+}
+.timeline_tittle {
+    color: red;
+    font-size: 80px;
+    font-family: 'Chela One', cursive;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.timeline_all {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.tm_card {
+    margin: 60px;
+    position: relative; /* Definir a posição como relativa para que os elementos filhos posicionados absolutamente sejam relativos a este elemento */
+    border: 1px solid black; /* Apenas para visualização da tm_card */
+}
+
+.tm_block {
+    position: absolute; /* Define a posição como absoluta para sobrepor a tm_card */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex; /* Apenas para centralizar o conteúdo vertical e horizontalmente */
+    justify-content: center;
+  }
+
+.tm_year {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: blur(4px);
+    background: transparent;
+    height: 100%;
+    width: 100%;
+}
+
+.tm_year h1 {
+    margin-top: 80px;
+    color: black;
+    font-size: 45px;
+    font-family: 'Chela One', cursive;
+    text-shadow: 0px 0px 9px #fff;
+}
+h5 {
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    margin-left: 5px;
+    margin-top: 117%;
+}
+
+.tm_year:hover {
+    backdrop-filter: blur(0px);
+    opacity: 0;
+}
+
+.tm_card:hover {
+    transition-duration:  0.2s;
+    animation-delay: 0.5;
+    transform: translateX(10px) scale(1.6);
+    animation-delay: 0.5s;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2c2c2c;
+    height: 80px;
+}
+.criador {
+    color: #fff;
+    font-size: 18px;
+}
+
+
+@media (max-width:600px) 
+{
+    .timeline_all {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .tm_card {
+        margin: 10px;
+    }
+    .remember {
+        font-size: 20px;
+    }
+
+}
+
