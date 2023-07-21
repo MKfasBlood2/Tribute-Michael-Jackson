@@ -200,175 +200,21 @@ footer {
     font-size: 18px;
 }
 
-@media (max-width: 1440px) 
+
+@media (max-width: 600px) 
 {
     .timeline_all {
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-    .tm_card {
-        margin: 50px;
-    }
-    .remember {
-        font-size: 18px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .criador {
-        color: #fff;
-        font-size: 16px;
-    }
-    .tm_card {
-        width: 185px;
-    }
-    .h_text {
-        max-width: 100%;
-    }
-    #history p {
-        padding-left: 25px;
-        padding-right: 25px;
-        line-height: 1.3;
-        color: #fff;
-        font-size: 18px;
-    }
-    footer {
-        height: 40px;
-    }
-    .logoheader {
-        font-size: 25PX;
-    }
-    .mh_1 {
-        font-size: 16px;
-        line-height: 35px;
-        padding-inline-start: 18px;
-        padding-inline-end: 18px;
-    }
-
-    #img_perfil {
-        width: 170px;
-        border-top-right-radius: 170px;
-        border-bottom-left-radius: 170px;
-    }
-}
-
-@media (max-width: 1024px) 
-{
-    .timeline_all {
-        padding-left: 35px;
-        padding-right: 35px;
-    }
-    .tm_card {
-        margin: 50px;
-    }
-    .remember {
-        font-size: 18px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .criador {
-        color: #fff;
-        font-size: 16px;
-    }
-    .tm_card {
-        width: 185px;
-    }
-    .h_text {
-        max-width: 100%;
-    }
-    #history p {
-        padding-left: 25px;
-        padding-right: 25px;
-        line-height: 1.3;
-        color: #fff;
-        font-size: 18px;
-    }
-    footer {
-        height: 40px;
-    }
-    .logoheader {
-        font-size: 25PX;
-    }
-    .mh_1 {
-        font-size: 16px;
-        line-height: 35px;
-        padding-inline-start: 18px;
-        padding-inline-end: 18px;
-    }
-
-    #img_perfil {
-        width: 170px;
-        border-top-right-radius: 170px;
-        border-bottom-left-radius: 170px;
-    }
-}
-
-@media (max-width: 768px) 
-{
-    .timeline_all {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .tm_card {
-        margin: 35px;
-        width: 150px;
-    }
-    .remember {
-        font-size: 15px;
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-    .criador {
-        color: #fff;
-        font-size: 13px;
-    }
-
-    .h_text {
-        max-width: 100%;
-    }
-    #history p {
-        padding-left: 25px;
-        padding-right: 25px;
-        line-height: 1.3;
-        color: #fff;
-        font-size: 15px;
-    }
-    footer {
-        height: 40px;
-    }
-    .logoheader {
-        font-size: 18PX;
-    }
-    .mh_1 {
-        font-size: 12px;
-        line-height: 30px;
-        padding-inline-start: 18px;
-        padding-inline-end: 18px;
-    }
-
-    #img_perfil {
-        width: 150px;
-        border-top-right-radius: 170px;
-        border-bottom-left-radius: 170px;
-    }
-    .tm_card:hover {
-        transform: translateX(10px) scale(1.3);
-    }
-
-    .tm_block h5 {
-        font-size: 10px;
-    }
-}
-
-@media (max-width:450px) 
-{
-    .timeline_all {
+        justify-content: space-around;
         padding-left: 0px;
         padding-right: 0px;
     }
     .tm_card {
-        margin-top: 20px;
-        margin-right: 12px;
-        width: 150px;
+        margin-top: 25px;
+        margin: 10px;
+        width: 180px;
+    }
+    .tm_card:hover {
+        transform: translateX(10px) scale(1.0);
     }
     .remember {
         font-size: 15px;
@@ -409,8 +255,63 @@ footer {
         border-bottom-left-radius: 170px;
     }
 
+    .tm_block h5 {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 601px) 
+{
+    .timeline_all {
+        justify-content: center;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .tm_card {
+        margin-top: 45px;
+        margin: 30px;
+        width: 180px;
+    }
     .tm_card:hover {
         transform: translateX(10px) scale(1.3);
+    }
+    .remember {
+        font-size: 15px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .criador {
+        color: #fff;
+        font-size: 13px;
+    }
+
+    .h_text {
+        max-width: 100%;
+    }
+    #history p {
+        padding-left: 70px;
+        padding-right: 70px;
+        line-height: 1.3;
+        color: #fff;
+        font-size: 15px;
+    }
+    footer {
+        height: 40px;
+    }
+    .logoheader {
+        font-size: 25PX;
+    }
+    .mh_1 {
+        font-size: 15px;
+        line-height: 30px;
+        padding-inline-start: 18px;
+        padding-inline-end: 18px;
+    }
+
+    #img_perfil {
+        width: 150px;
+        border-top-right-radius: 170px;
+        border-bottom-left-radius: 170px;
     }
 
     .tm_block h5 {
